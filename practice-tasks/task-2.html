@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 5rem);
+            gap: 15px;
+            /* grid-auto-rows: repeat(12, 5rem); */
+        }
+        .box {
+            color: white;
+            font-size: 5rem;
+            padding: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 15px;
+        }
+        .box-1 {
+            background-color: #b1344f;
+            grid-column: 1/7;
+            grid-row: 1/13;
+        }
+        .box-2 {
+            background-color: orange;
+            grid-column: 7/13;
+            grid-row: 1/7;
+        }
+        .box-3 {
+            background-color: purple;
+            grid-column: 7/10;
+            grid-row: 7/13;
+        }
+        .box-4 {
+            background-color: gray;
+            grid-column: 10/13;
+            grid-row: 7/13
+        }
+
+        @media screen and (max-width: 576px) {
+            .box {
+                grid-column: 1/13;
+                font-size: 3rem;
+            }
+            .box-1 {
+                grid-row: 1/4;
+            }
+            .box-2 {
+                grid-row: 4/7;
+            }
+            .box-3 {
+                grid-row: 7/10;
+            }
+            .box-4 {
+                grid-row: 10/13;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+    </div>
+</body>
+</html>
