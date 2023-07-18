@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        body {
+            max-width: 1400px;
+            margin: 0 auto;
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+        }
+
+        .food-container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .food-item {
+            border: 1px solid #bbb;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            margin: 10px;
+        }
+
+        .food-item img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .food-info {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .item-details h3 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .item-details p {
+            text-align: justify;
+        }
+
+        .item-details button {
+            padding: 15px 20px;
+            color: white;
+            background-color: purple;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 576px) {
+            .food-container {
+                margin-top: 0;
+            }
+            .food-item {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="food-container">
+        <div class="food-item">
+            <img src="./images/food-1.jpg" alt="">
+            <div class="food-info">
+                <div class="item-details">
+                    <h3>Post Title Will Be Here</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa at dicta saepe minus dignissimos
+                        soluta aliquid ex autem laboriosam mollitia magni natus dolorum, error earum accusamus illum
+                        ratione atque cupiditate, fuga ad quidem architecto velit. Eum sunt quaerat velit voluptatum
+                        nisi sed ipsum soluta aliquam laborum possimus cumque, mollitia tenetur ut nostrum facilis
+                        eveniet temporibus facere fugiat rerum animi veniam optio quam libero expedita. Quibusdam
+                        praesentium, illum nesciunt quia est distinctio placeat nulla, magnam at assumenda beatae
+                        aperiam expedita nisi ea! Quasi hic sit aliquam natus ullam magni perferendis nihil
+                        reprehenderit, obcaecati saepe nemo, autem adipisci repudiandae quod eius aut.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="food-item">
+            <img src="./images/food-2.webp" alt="">
+            <div class="food-info">
+                <div class="item-details">
+                    <h3>Post Title Will Be Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi atque beatae sequi, aliquid
+                        amet alias, nobis dignissimos, adipisci tenetur illo error quos! Quas culpa alias quod cum esse,
+                        repellendus totam dolorum! Aliquid dolorem nostrum expedita non esse corporis et earum beatae
+                        quas ea laboriosam libero quisquam sed deleniti voluptates deserunt dolor, tempora facere quae
+                        architecto. Provident vitae maxime atque delectus deleniti autem deserunt vel, voluptatem enim
+                        sunt labore mollitia distinctio dolorum aliquam quos optio dolor veritatis ducimus perferendis
+                        itaque reprehenderit aut quasi tempora? Nihil ipsum reiciendis aut placeat impedit! Praesentium
+                        totam quis temporibus consequuntur cumque, quas impedit laborum voluptatum fugiat.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
